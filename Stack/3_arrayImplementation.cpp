@@ -20,7 +20,7 @@ public:
 
     void pop()
     {
-        if(idx == -1)
+        if (idx == -1)
         {
             cout << "stck is empty!" << endl;
             return;
@@ -30,10 +30,10 @@ public:
 
     int top()
     {
-        if(idx == -1)
+        if (idx == -1)
         {
             cout << "Stack is empty!" << endl;
-            return;
+            return -1;
         }
         return arr[idx];
     }
@@ -41,6 +41,14 @@ public:
     int size()
     {
         return idx + 1;
+    }
+
+    void display()
+    {
+        for (int i = 0; i <= idx; i++) // Initialize 'i' and use 'idx' to control loop
+        {
+            cout << arr[i] << endl;
+        }
     }
 };
 
@@ -56,6 +64,7 @@ int main()
 
     cout << st.top() << endl;
     cout << st.size() << endl;
+    st.display();
 
     return 0;
 }
