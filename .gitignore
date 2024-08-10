@@ -1,1 +1,13 @@
 .vscode/
+
+# Ignore object files
+*.o
+
+# Ignore precompiled headers
+*.gch
+
+# Ignore dependency files
+*.d
+
+# Ignore default executables
+a.out
