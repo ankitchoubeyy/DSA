@@ -182,11 +182,94 @@ int main()
     {
         for (int j = 1; j <= i; j++)
         {
-            cout << 6-j << " ";
+            cout << 6 - j << " ";
         }
         cout << endl;
     }
 
     // Medium level Questions
+
+    // 1. Triangle with Space
+    cout << "Triangle with Space" << endl;
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 10 - i; j > 1; j--)
+        {
+            cout << "  ";
+        }
+        for (int k = 0; k < i + 1; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    // 2. Triangle with Space and same row value
+    cout << "Triangle with Space and same row value" << endl;
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 8 - i; j > 1; j--)
+        {
+            cout << "  ";
+        }
+        for (int k = 0; k < i + 1; k++)
+        {
+            cout << i + 1 << " ";
+        }
+        cout << endl;
+    }
+
+    // 3. Triangle with Space having
+    cout << "Triangle with Space and same row value" << endl;
+    for (int i = 0; i < 8; i++)
+    {
+        for (int j = 8 - i; j > 1; j--)
+        {
+            cout << "  ";
+        }
+        for (int k = 0; k < i + 1; k++)
+        {
+            cout << char(65 + k) << " ";
+        }
+        cout << endl;
+    }
+
+    // Hard Patterns
+
+    // 1. Pyramid Pattern
+    cout << "Pyramid Pattern" << endl;
+    for (int i = 1; i <= 5; i++)
+    {
+        for (int j = 6 - i; j > 1; j--)
+        {
+            cout << "  ";
+        }
+        for (int k = 0; k < (i * 2) - 1; k++)
+        {
+            cout << "* ";
+        }
+        cout << endl;
+    }
+
+    // 2. Palindrome pyramid
+
+    cout << "Palindrome pyrmid" << endl;
+    for (int i = 1; i <= 8; i++)
+    {
+        for (int j = 8 - i; j >= 1; j--)
+        {
+            cout << "  ";
+        }
+        for (int k = 1; k < i; k++)
+        {
+            cout << k << " ";
+        }
+        for (int l = i; l >= 1; l--)
+        {
+            cout << l << " ";
+        }
+        cout << endl;
+    }
+
     return 0;
 }
